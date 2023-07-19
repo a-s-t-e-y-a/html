@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image and Text on Mouse Hover</title>
+</head>
+<body>
+  <h1>Hover over Me</h1>
+  
+  <div id="content" onmouseover="displayNewContent()">
+    <p>Original Content</p>
+  </div>
+  
+  <script>
+    function displayNewContent() {
+      var contentDiv = document.getElementById("content");
+      contentDiv.innerHTML = "<img src='new-image.jpg' alt='New Image'><p>New Content</p>";
+    }
+  </script>
+</body>
+</html>

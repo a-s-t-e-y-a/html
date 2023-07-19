@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exception Handling</title>
+  <script>
+    function demonstrateExceptionHandling() {
+      try {
+        // Code that may throw an exception
+        var result = 10 / 0;
+        console.log(result);
+      } catch (error) {
+        // Exception handling
+        console.log("An error occurred: " + error.message);
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Exception Handling</h1>
+  
+  <button onclick="demonstrateExceptionHandling()">Click to demonstrate Exception Handling</button>
+</body>
+</html>

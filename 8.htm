@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predefined Functions</title>
+  <script>
+    function demonstrateArrayFunctions() {
+      var num = [3, 1, 4, 2, 5];
+      
+      console.log(num.length);
+      console.log(num.join(", "));
+      console.log(num.sort());
+      console.log(num.reverse());
+      console.log(num.indexOf(4));
+      console.log(num.slice(2, 4));
+    }
+    
+    function demonstrateDateFunctions() {
+      var now = new Date();
+      
+      console.log(now.getFullYear());
+      console.log(now.getMonth());
+      console.log(now.getDate());
+      console.log(now.getHours());
+      console.log(now.getMinutes());
+      console.log(now.getSeconds());
+    }
+  </script>
+</head>
+<body>
+  <h1>Predefined Functions</h1>
+  
+  <h2>Array Functions</h2>
+  <button onclick="demonstrateArrayFunctions()">Click to demonstrate Array functions</button>
+  
+  <h2>Date Functions</h2>
+  <button onclick="demonstrateDateFunctions()">Click to demonstrate Date functions</button>
+</body>
+</html>

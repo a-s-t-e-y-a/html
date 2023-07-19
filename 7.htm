@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predefined Functions</title>
+  <script>
+    function demonstrateStringFunctions() {
+      var str = "Hello, World!";
+      
+      console.log(str.length);
+      console.log(str.toUpperCase());
+      console.log(str.toLowerCase());
+      console.log(str.indexOf("World"));
+      console.log(str.substring(7, 12));
+      console.log(str.replace("Hello", "Hi"));
+    }
+    
+    function demonstrateMathFunctions() {
+      var num = 4.2;
+      
+      console.log(Math.round(num));
+      console.log(Math.ceil(num));
+      console.log(Math.floor(num));
+      console.log(Math.random());
+      console.log(Math.max(5, 3, 7, 1, 9));
+      console.log(Math.min(5, 3, 7, 1, 9));
+    }
+  </script>
+</head>
+<body>
+  <h1>Predefined Functions</h1>
+  
+  <h2>String Functions</h2>
+  <button onclick="demonstrateStringFunctions()">Click to demonstrate String functions</button>
+  
+  <h2>Math Functions</h2>
+  <button onclick="demonstrateMathFunctions()">Click to demonstrate Math functions</button>
+</body>
+</html>

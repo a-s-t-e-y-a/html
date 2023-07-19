@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frames Example</title>
+  <style>
+    #floating-frame {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 300px;
+      height: 200px;
+      border: 1px solid black;
+    }
+
+    #navigation-frame {
+      float: left;
+      width: 20%;
+      height: 100vh;
+      border: 1px solid black;
+    }
+
+    #content-frame {
+      margin-left: 20%;
+      height: 100vh;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div id="floating-frame">
+    <h3>Floating Frame</h3>
+    <iframe src="floating.html"></iframe>
+  </div>
+
+  <div id="navigation-frame">
+    <h3>Navigation Frame</h3>
+    <iframe src="navigation.html"></iframe>
+  </div>
+
+  <div id="content-frame">
+    <h3>Content Frame</h3>
+    <iframe src="content.html"></iframe>
+  </div>
+</body>
+</html>

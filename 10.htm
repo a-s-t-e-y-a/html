@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar</title>
+</head>
+<body>
+  <h1>Calendar</h1>
+  
+  <button onclick="displayCalendar()">Display Calendar</button>
+  
+  <div id="calendar-container"></div>
+  
+  <script>
+    function displayCalendar() {
+      try {
+        var year = prompt("Enter a year:");
+        if (!year) throw new Error("Invalid year entered.");
+
+        var date = new Date(year, 0, 1);
+        var calendar = "<h2>Calendar for " + year + "</h2><table>";
+
+        for (var month = 0; month < 6; month++) {
+          calendar += "<tr>";
+          for (var i = 0; i < 6; i++) {
+            calendar += "<td>" + (date.getMonth() + 1) + "</td>";
+            date.setMonth(date.getMonth() + 1);
+          }
+          calendar += "</tr>";
+        }
+
+        calendar += "</table>";
+        document.getElementById("calendar-container").innerHTML = calendar;
+      } catch (error) {
+        console.log("An error occurred: " + error.message);
+      }
+    }
+  </script>
+</body>
+</html>
